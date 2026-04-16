@@ -4,7 +4,8 @@ function findNumber(word) {
 }
 //console.log("findNumber",findNumber('is2'))
 
-function getSortedWords(words) {
+function getSortedWords(words= "") {
+    if(words === "") return words
   const wordsObj = words.split(" ").map((word) => {
     const foundNum = findNumber(word);
     if (foundNum) {
@@ -20,3 +21,4 @@ function getSortedWords(words) {
 }
 
 console.log(getSortedWords("is2 Thi1s T4est 3a"));
+console.log(getSortedWords(""));
