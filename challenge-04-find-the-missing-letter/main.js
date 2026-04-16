@@ -6,10 +6,11 @@ function findMissingLetter(letters) {
   //console.log("indexOfFirst",indexOfFirst)
   //console.log("sliceStr",sliceStr)
   //console.log("foundLetter",foundLetter)
-
-  return sliceStr
+  
+  const result = sliceStr
     .split("")
     .find((char) => !letters.join("").toLowerCase().includes(char));
+  return String(letters[0]) === String(letters[0]).toLowerCase() ? result : result.toUpperCase();
 }
 console.log(findMissingLetter(["a", "b", "c", "d", "f"]));
 console.log(findMissingLetter(["O", "Q", "R", "S"]));
