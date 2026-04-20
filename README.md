@@ -1,4 +1,6 @@
-# **🚀 Advanced Software Development mit KI \- Challenges**
+# **🚀 Advanced Software Development mit KI - Challenges**
+
+![App Preview](./preview.webp)
 
 ## **📌 About this Repository**
 
